@@ -1,0 +1,25 @@
+.accent,
+.nav-link.current,
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: $accent-color;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #000000;
+
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-weight: 700;
+
+  &.inverse {
+    color: $secondary-text-colo;
+  }
+}
