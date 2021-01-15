@@ -21,7 +21,6 @@
 .nav-link {
   position: relative;
   display: block;
-  /* Область ссылок увеличина согласно видео Репеты */
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -30,32 +29,32 @@
   letter-spacing: 0.02em;
 
   transition: color 250ms $animation-timing;
-}
 
-.nav-link::after {
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  opacity: 0;
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $accent-color;
-}
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    opacity: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
 
-.nav-link.current::after {
-  opacity: 1;
+  &.current::after {
+    opacity: 1;
+  }
 }
 
 .contacts-list {
   margin-left: auto;
   font-weight: 500;
   letter-spacing: 0.02em;
-}
 
-.contacts-list .item:not(:last-child) {
-  margin-right: 30px;
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contacts-link,
@@ -66,11 +65,11 @@
 
 .contacts-link {
   transition: color 250ms $animation-timing;
-}
 
-.contacts-link.header {
-  display: inline-flex;
-  align-items: center;
+  &.header {
+    display: inline-flex;
+    align-items: center;
+  }
 }
 
 .icon-envelope {
@@ -79,6 +78,11 @@
   margin-right: 10px;
 
   fill: currentColor;
+
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
 }
 
 .icon-smartphone {
@@ -87,9 +91,9 @@
   margin-right: 10px;
 
   fill: currentColor;
-}
 
-.icon-envelope:focus,
-.icon-envelope:hover {
-  fill: $accent-color;
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
 }

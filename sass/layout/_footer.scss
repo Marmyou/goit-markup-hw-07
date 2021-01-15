@@ -14,8 +14,10 @@
   line-height: 1.71;
 }
 
-.contacts-footer .item + .item {
-  margin-top: 9px;
+.contacts-footer {
+  .item + .item {
+    margin-top: 9px;
+  }
 }
 
 .address-google {
@@ -33,7 +35,7 @@
 .footer-title {
   margin-bottom: 20px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: $bold-font-weight;
   text-transform: uppercase;
 
   color: $secondary-text-color;
@@ -55,15 +57,17 @@
   color: $secondary-text-color;
 
   transition: background-color 250ms $animation-timing;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
-.studio-social-link:hover,
-.studio-social-link:focus {
-  background-color: $accent-color;
-}
-
-.studio-social:not(:last-child) {
-  margin-right: 10px;
+.studio-social {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .studio-social-icon {
@@ -108,7 +112,7 @@
 
   font-size: 16px;
   line-height: 1.87;
-  font-weight: 700;
+  font-weight: $bold-font-weight;
   letter-spacing: 0.06em;
   text-align: left;
 

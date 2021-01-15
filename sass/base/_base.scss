@@ -17,9 +17,9 @@
 
   font-family: $secondary-font;
   font-size: 26px;
-  font-weight: 700;
+  font-weight: $bold-font-weight;
 
   &.inverse {
-    color: $secondary-text-colo;
+    color: $secondary-text-color;
   }
 }

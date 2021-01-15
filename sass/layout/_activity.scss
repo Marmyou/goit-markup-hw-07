@@ -6,19 +6,19 @@
 .team-title,
 .clients-title {
   margin-bottom: 50px;
-  font-weight: 700;
+  font-weight: $bold-font-weight;
   font-size: 36px;
   text-align: center;
-}
-
-.activity-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .activity-item {
   position: relative;
   z-index: -1;
   width: calc((100% - 60px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .activity-text {
@@ -32,5 +32,5 @@
   color: $secondary-text-color;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: $bold-font-weight;
 }

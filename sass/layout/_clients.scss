@@ -22,11 +22,11 @@
   color: $logo-color;
 
   transition: border-color 250ms $animation-timing;
-}
 
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid $accent-color;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 
 .clients-icons {
@@ -34,32 +34,36 @@
   transition: fill 250ms $animation-timing;
 }
 
-.clients-icon-1 {
-  width: 44.27px;
-  height: 49.23px;
-}
-.clients-icon-2 {
-  width: 40px;
-  height: 52px;
-}
-.clients-icon-3 {
-  width: 41px;
-  height: 42.6px;
-}
-.clients-icon-4 {
-  width: 79.66px;
-  height: 42.02px;
-}
-.clients-icon-5 {
-  width: 59px;
-  height: 47px;
-}
-.clients-icon-6 {
-  width: 88.48px;
-  height: 45.44px;
+.clients-link {
+  &:hover .clients-icons,
+  &:focus .clients-icons {
+    fill: $accent-color;
+  }
 }
 
-.clients-link:hover .clients-icons,
-.clients-link:focus .clients-icons {
-  fill: $accent-color;
+.clients-icon {
+  &-1 {
+    width: 44.27px;
+    height: 49.23px;
+  }
+  &-2 {
+    width: 40px;
+    height: 52px;
+  }
+  &-3 {
+    width: 41px;
+    height: 42.6px;
+  }
+  &-4 {
+    width: 79.66px;
+    height: 42.02px;
+  }
+  &-5 {
+    width: 59px;
+    height: 47px;
+  }
+  &-6 {
+    width: 88.48px;
+    height: 45.44px;
+  }
 }
